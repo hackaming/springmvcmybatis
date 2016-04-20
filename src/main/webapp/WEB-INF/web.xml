@@ -6,16 +6,17 @@
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
 		<!-- Spring configuration -->
+				<context-param>
+			<param-name>contextconfiglocation</param-name>
+			<param-value>/WEB-INF/beans.xml</param-value>
+		</context-param>
 		<display-name>Archetype Created Web Application</display-name>
 		<listener>
 			<listener-class>
 				org.springframework.web.context.ContextLoaderListener
 			</listener-class>
 		</listener>
-		<context-param>
-			<param-name>contextconfiglocation</param-name>
-			<param-value>/WEB-INF/beans.xml</param-value>
-		</context-param>
+
 
 		<!-- SpringMVC configuration -->
 		<servlet>
